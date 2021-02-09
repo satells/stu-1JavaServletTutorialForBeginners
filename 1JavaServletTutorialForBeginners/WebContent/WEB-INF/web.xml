@@ -22,5 +22,29 @@
 		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>initParamServlet</servlet-name>
+		<servlet-class>org.o7planning.tutorial.servlet.InitParamServlet</servlet-class>
+
+
+		<init-param>
+			<param-name>emailSupport1</param-name>
+			<param-value>abc@email.com</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>emailSupport2</param-name>
+			<param-value>support@email.com</param-value>
+		</init-param>
+
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>initParamServlet</servlet-name>
+		<url-pattern>/emailSupport</url-pattern>
+	</servlet-mapping>
+
+
 
 </web-app>
